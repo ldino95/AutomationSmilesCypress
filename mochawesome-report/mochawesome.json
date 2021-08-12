@@ -1,0 +1,106 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2021-08-12T00:12:30.880Z",
+    "end": "2021-08-12T00:18:21.513Z",
+    "duration": 350633,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "a586da00-b465-452a-94a8-1971380fc108",
+      "title": "",
+      "fullFile": "cypress/integration/smiles.feature",
+      "file": "cypress/integration/smiles.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "1bc7797b-4709-4c3f-a42a-20c1b903b9c0",
+          "title": "Realizar compra de passagem no site smiles",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Realizar compra de passagem aerea",
+              "fullTitle": "Realizar compra de passagem no site smiles Realizar compra de passagem aerea",
+              "timedOut": null,
+              "duration": 350211,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "CypressError: Timed out retrying after 300050ms: `cy.click()` failed because the center of this element is hidden from view:\n\n`<label class=\"flightlb\" for=\"optionMiles0\" style=\"min-height:17px\">22.500</label>`\n\nFix this problem, or use `{force: true}` to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with",
+                "estack": "CypressError: Timed out retrying after 300050ms: `cy.click()` failed because the center of this element is hidden from view:\n\n`<label class=\"flightlb\" for=\"optionMiles0\" style=\"min-height:17px\">22.500</label>`\n\nFix this problem, or use `{force: true}` to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with\n    at $Cy.ensureDescendents (https://www.smiles.com.br/__cypress/runner/cypress_runner.js:148572:24)\n    at ensureDescendents (https://www.smiles.com.br/__cypress/runner/cypress_runner.js:135786:8)\n    at possiblyScrollMultipleTimes (https://www.smiles.com.br/__cypress/runner/cypress_runner.js:135895:22)\n    at scrollContainers (https://www.smiles.com.br/__cypress/runner/cypress_runner.js:135918:16)\n    at ensureDescendentsAndScroll (https://www.smiles.com.br/__cypress/runner/cypress_runner.js:135922:14)\n    at ensureElIsNotCovered (https://www.smiles.com.br/__cypress/runner/cypress_runner.js:135927:5)\n    at runAllChecks (https://www.smiles.com.br/__cypress/runner/cypress_runner.js:136114:52)\n    at retryActionability (https://www.smiles.com.br/__cypress/runner/cypress_runner.js:136137:16)\n    at tryCatcher (https://www.smiles.com.br/__cypress/runner/cypress_runner.js:13212:23)\n    at Function.Promise.attempt.Promise.try (https://www.smiles.com.br/__cypress/runner/cypress_runner.js:10486:29)\n    at tryFn (https://www.smiles.com.br/__cypress/runner/cypress_runner.js:153198:21)\n    at whenStable (https://www.smiles.com.br/__cypress/runner/cypress_runner.js:153236:12)\n    at https://www.smiles.com.br/__cypress/runner/cypress_runner.js:152728:16\n    at tryCatcher (https://www.smiles.com.br/__cypress/runner/cypress_runner.js:13212:23)\n    at Promise._settlePromiseFromHandler (https://www.smiles.com.br/__cypress/runner/cypress_runner.js:11147:31)\n    at Promise._settlePromise (https://www.smiles.com.br/__cypress/runner/cypress_runner.js:11204:18)\nFrom Your Spec Code:\n    at Context.eval (https://www.smiles.com.br/__cypress/tests?p=cypress/integration/smiles.feature:83:48)",
+                "diff": null
+              },
+              "uuid": "0aa68270-0981-4b12-ae0c-645f80433771",
+              "parentUUID": "1bc7797b-4709-4c3f-a42a-20c1b903b9c0",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "0aa68270-0981-4b12-ae0c-645f80433771"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 350211,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false
+      },
+      "version": "5.2.0"
+    }
+  }
+}

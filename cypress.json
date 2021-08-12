@@ -1,0 +1,12 @@
+{
+    "baseUrl" : "https://www.smiles.com.br",
+    "viewportWidth" : 1024,
+    "viewportHeight" : 600,
+    "defaultCommandTimeout": 10000,
+    "step_definitions": "cypress/integration/features",
+    "testFiles": "**/*.feature"   ,
+    "allureResultsPath": "allure-results",
+    "tmsPrefix": "https://url-to-bug-tracking-system/task-",
+    "issuePrefix": "https://url-to-tms/tests/caseId-"
+    
+}
